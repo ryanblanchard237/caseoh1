@@ -1,0 +1,414 @@
+
+-- Got the folder of files called "SFML-2.6.0-sources" from sfml-dev.org.
+
+-- Figured out how to use CMake.
+   https://www.sfml-dev.org/tutorials/2.6/compile-with-cmake.php
+
+-- Clicked the "Generate" button in CMake which makes Visual Studio
+   solution files and project files.
+
+
+-- CMake made things in the folder "SFML-2.6.0-sources-CMAKEOUT".
+   I went to that folder and opened "SFML.sln" with Visual Studio.
+
+-- Once you've done this, you can see the different VisStudio projects
+   that CMake made. And you can just build whichever one you need,
+   which to me is obviously just ALL_BUILD (under the "CMake" folder
+   in the Solution Explorer).
+   
+   (You have to open the "Build" menu at the top of Visual Studio,
+   and then like halfway down it has the option of
+   "Build ALL_BUILD" (or whatever the currently selected project is.
+   It will say "Build <current-project> where <current-project> is actually
+   the literal name of whatever project has been clicked on in Solution Explorer
+   on the right side of the Visual Studio window.)
+   
+   !!!!!
+   Running "BUILD_INSTALL" puts a bunch of things into
+   C:/Program Files (x86)/SFML/
+
+   
+
+
+
+
+
+
+
+
+
+----- OUTPUT FROM "BUILD ALL_BUILD" -----
+Building into "C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\"
+===============================================================================================================================
+Build started at 7:16 PM...
+1>------ Build started: Project: ZERO_CHECK, Configuration: Debug x64 ------
+1>Checking Build System
+2>------ Build started: Project: sfml-system, Configuration: Debug x64 ------
+3>------ Build started: Project: sfml-main, Configuration: Debug x64 ------
+2>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/System/CMakeLists.txt
+2>Clock.cpp
+3>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Main/CMakeLists.txt
+2>Err.cpp
+3>MainWin32.cpp
+2>Lock.cpp
+2>Mutex.cpp
+3>sfml-main.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-main-d.lib
+2>Sleep.cpp
+2>String.cpp
+2>Thread.cpp
+2>ThreadLocal.cpp
+2>Time.cpp
+2>FileInputStream.cpp
+2>MemoryInputStream.cpp
+2>ClockImpl.cpp
+2>MutexImpl.cpp
+2>SleepImpl.cpp
+2>ThreadImpl.cpp
+2>ThreadLocalImpl.cpp
+2>Generating Code...
+2>   Creating library C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-system-d.lib and object C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-system-d.exp
+2>sfml-system.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-system-d-2.dll
+4>------ Build started: Project: sfml-window, Configuration: Debug x64 ------
+5>------ Build started: Project: sfml-network, Configuration: Debug x64 ------
+6>------ Build started: Project: sfml-audio, Configuration: Debug x64 ------
+4>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Window/CMakeLists.txt
+5>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Network/CMakeLists.txt
+5>Ftp.cpp
+4>Clipboard.cpp
+6>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Audio/CMakeLists.txt
+6>ALCheck.cpp
+4>Context.cpp
+5>Http.cpp
+4>Cursor.cpp
+6>AlResource.cpp
+4>GlContext.cpp
+6>AudioDevice.cpp
+5>IpAddress.cpp
+6>Listener.cpp
+6>Music.cpp
+4>GlResource.cpp
+4>Joystick.cpp
+5>Packet.cpp
+6>Sound.cpp
+6>SoundBuffer.cpp
+4>JoystickManager.cpp
+5>Socket.cpp
+6>SoundBufferRecorder.cpp
+6>InputSoundFile.cpp
+4>Keyboard.cpp
+5>SocketSelector.cpp
+6>OutputSoundFile.cpp
+6>SoundRecorder.cpp
+4>Mouse.cpp
+5>TcpListener.cpp
+6>SoundSource.cpp
+6>SoundStream.cpp
+4>Touch.cpp
+4>Sensor.cpp
+4>SensorManager.cpp
+6>SoundFileFactory.cpp
+4>VideoMode.cpp
+5>TcpSocket.cpp
+4>Vulkan.cpp
+6>SoundFileReaderFlac.cpp
+4>Window.cpp
+6>SoundFileReaderMp3.cpp
+5>UdpSocket.cpp
+4>WindowBase.cpp
+6>SoundFileReaderOgg.cpp
+5>SocketImpl.cpp
+6>SoundFileReaderWav.cpp
+6>SoundFileWriterFlac.cpp
+5>Generating Code...
+4>WindowImpl.cpp
+6>SoundFileWriterOgg.cpp
+5>   Creating library C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-network-d.lib and object C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-network-d.exp
+5>sfml-network.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-network-d-2.dll
+7>------ Build started: Project: sockets, Configuration: Debug x64 ------
+8>------ Build started: Project: ftp, Configuration: Debug x64 ------
+7>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/sockets/CMakeLists.txt
+8>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/ftp/CMakeLists.txt
+6>Generating Code...
+7>Sockets.cpp
+8>Ftp.cpp
+4>CursorImpl.cpp
+6>Compiling...
+6>SoundFileWriterWav.cpp
+7>TCP.cpp
+6>Generating Code...
+4>ClipboardImpl.cpp
+8>ftp.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\ftp\Debug\ftp-d.exe
+7>UDP.cpp
+6>   Creating library C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-audio-d.lib and object C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-audio-d.exp
+6>sfml-audio.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-audio-d-2.dll
+9>------ Build started: Project: voip, Configuration: Debug x64 ------
+10>------ Build started: Project: sound-capture, Configuration: Debug x64 ------
+11>------ Build started: Project: sound, Configuration: Debug x64 ------
+11>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/sound/CMakeLists.txt
+10>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/sound_capture/CMakeLists.txt
+9>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/voip/CMakeLists.txt
+11>Sound.cpp
+10>SoundCapture.cpp
+9>VoIP.cpp
+7>Generating Code...
+4>InputImpl.cpp
+7>sockets.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\sockets\Debug\sockets-d.exe
+9>Client.cpp
+11>sound.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\sound\Debug\sound-d.exe
+10>sound-capture.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\sound_capture\Debug\sound-capture-d.exe
+4>Generating Code...
+9>Server.cpp
+4>Compiling...
+4>JoystickImpl.cpp
+9>Generating Code...
+9>voip.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\voip\Debug\voip-d.exe
+4>SensorImpl.cpp
+4>VideoModeImpl.cpp
+4>VulkanImplWin32.cpp
+4>WindowImplWin32.cpp
+4>WglContext.cpp
+4>Generating Code...
+4>   Creating library C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-window-d.lib and object C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-window-d.exp
+4>sfml-window.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-window-d-2.dll
+12>------ Build started: Project: window, Configuration: Debug x64 ------
+13>------ Build started: Project: sfml-graphics, Configuration: Debug x64 ------
+12>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/window/CMakeLists.txt
+13>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Graphics/CMakeLists.txt
+13>BlendMode.cpp
+12>Window.cpp
+13>Color.cpp
+13>Font.cpp
+12>window.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\window\Debug\window-d.exe
+13>Glsl.cpp
+13>GLCheck.cpp
+13>GLExtensions.cpp
+13>Image.cpp
+13>ImageLoader.cpp
+13>RenderStates.cpp
+13>RenderTexture.cpp
+13>RenderTarget.cpp
+13>RenderWindow.cpp
+13>Shader.cpp
+13>Texture.cpp
+13>TextureSaver.cpp
+13>Transform.cpp
+13>Transformable.cpp
+13>View.cpp
+13>Vertex.cpp
+13>Shape.cpp
+13>Generating Code...
+13>Compiling...
+13>CircleShape.cpp
+13>RectangleShape.cpp
+13>ConvexShape.cpp
+13>Sprite.cpp
+13>Text.cpp
+13>VertexArray.cpp
+13>VertexBuffer.cpp
+13>RenderTextureImpl.cpp
+13>RenderTextureImplFBO.cpp
+13>RenderTextureImplDefault.cpp
+13>Generating Code...
+13>   Creating library C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-graphics-d.lib and object C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources-CMAKEOUT/lib/Debug/sfml-graphics-d.exp
+13>sfml-graphics.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\lib\Debug\sfml-graphics-d-2.dll
+14>------ Build started: Project: win32, Configuration: Debug x64 ------
+15>------ Build started: Project: vulkan, Configuration: Debug x64 ------
+16>------ Build started: Project: tennis, Configuration: Debug x64 ------
+17>------ Build started: Project: shader, Configuration: Debug x64 ------
+18>------ Build started: Project: opengl, Configuration: Debug x64 ------
+19>------ Build started: Project: joystick, Configuration: Debug x64 ------
+20>------ Build started: Project: island, Configuration: Debug x64 ------
+14>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/win32/CMakeLists.txt
+16>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/tennis/CMakeLists.txt
+15>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/vulkan/CMakeLists.txt
+17>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/shader/CMakeLists.txt
+18>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/opengl/CMakeLists.txt
+15>Vulkan.cpp
+14>Win32.cpp
+16>Tennis.cpp
+19>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/joystick/CMakeLists.txt
+17>Shader.cpp
+18>OpenGL.cpp
+20>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/examples/island/CMakeLists.txt
+19>Joystick.cpp
+20>Island.cpp
+16>tennis.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\tennis\Debug\tennis-d.exe
+18>opengl.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\opengl\Debug\opengl-d.exe
+17>shader.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\shader\Debug\shader-d.exe
+15>vulkan.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\vulkan\Debug\vulkan-d.exe
+19>joystick.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\joystick\Debug\joystick-d.exe
+14>win32.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\win32\Debug\win32-d.exe
+20>island.vcxproj -> C:\Users\spadm\Documents\Programming\SFML-2.6.0-sources-CMAKEOUT\examples\island\Debug\island-d.exe
+21>------ Build started: Project: ALL_BUILD, Configuration: Debug x64 ------
+21>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/CMakeLists.txt
+========== Build: 21 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 7:16 PM and took 26.685 seconds ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================================================================================
+===============================================================================================================================
+----- OUTPUT FROM "BUILD ALL_BUILD" -----
+Building into "C:\Program Files\SFML-2.6.0\"
+===============================================================================================================================
+===============================================================================================================================
+Build started at 7:34 PM...
+1>------ Build started: Project: ZERO_CHECK, Configuration: Debug x64 ------
+1>Checking Build System
+2>------ Build started: Project: sfml-system, Configuration: Debug x64 ------
+3>------ Build started: Project: sfml-main, Configuration: Debug x64 ------
+2>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/System/CMakeLists.txt
+2>Clock.cpp
+2>Err.cpp
+3>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Main/CMakeLists.txt
+3>MainWin32.cpp
+2>Lock.cpp
+2>Mutex.cpp
+2>Sleep.cpp
+3>sfml-main.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-main-d.lib
+2>String.cpp
+2>Thread.cpp
+2>ThreadLocal.cpp
+2>Time.cpp
+2>FileInputStream.cpp
+2>MemoryInputStream.cpp
+2>ClockImpl.cpp
+2>MutexImpl.cpp
+2>SleepImpl.cpp
+2>ThreadImpl.cpp
+2>ThreadLocalImpl.cpp
+2>Generating Code...
+2>   Creating library C:/Program Files/SFML-2.6.0/lib/Debug/sfml-system-d.lib and object C:/Program Files/SFML-2.6.0/lib/Debug/sfml-system-d.exp
+2>sfml-system.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-system-d-2.dll
+4>------ Build started: Project: sfml-window, Configuration: Debug x64 ------
+5>------ Build started: Project: sfml-network, Configuration: Debug x64 ------
+6>------ Build started: Project: sfml-audio, Configuration: Debug x64 ------
+4>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Window/CMakeLists.txt
+5>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Network/CMakeLists.txt
+5>Ftp.cpp
+4>Clipboard.cpp
+6>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Audio/CMakeLists.txt
+6>ALCheck.cpp
+4>Context.cpp
+5>Http.cpp
+4>Cursor.cpp
+6>AlResource.cpp
+4>GlContext.cpp
+6>AudioDevice.cpp
+5>IpAddress.cpp
+6>Listener.cpp
+6>Music.cpp
+4>GlResource.cpp
+5>Packet.cpp
+4>Joystick.cpp
+6>Sound.cpp
+6>SoundBuffer.cpp
+4>JoystickManager.cpp
+5>Socket.cpp
+6>SoundBufferRecorder.cpp
+6>InputSoundFile.cpp
+5>SocketSelector.cpp
+4>Keyboard.cpp
+6>OutputSoundFile.cpp
+6>SoundRecorder.cpp
+4>Mouse.cpp
+5>TcpListener.cpp
+6>SoundSource.cpp
+6>SoundStream.cpp
+4>Touch.cpp
+4>Sensor.cpp
+4>SensorManager.cpp
+6>SoundFileFactory.cpp
+5>TcpSocket.cpp
+4>VideoMode.cpp
+4>Vulkan.cpp
+6>SoundFileReaderFlac.cpp
+4>Window.cpp
+6>SoundFileReaderMp3.cpp
+5>UdpSocket.cpp
+6>SoundFileReaderOgg.cpp
+4>WindowBase.cpp
+5>SocketImpl.cpp
+6>SoundFileReaderWav.cpp
+5>Generating Code...
+6>SoundFileWriterFlac.cpp
+4>WindowImpl.cpp
+6>SoundFileWriterOgg.cpp
+5>   Creating library C:/Program Files/SFML-2.6.0/lib/Debug/sfml-network-d.lib and object C:/Program Files/SFML-2.6.0/lib/Debug/sfml-network-d.exp
+5>sfml-network.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-network-d-2.dll
+6>Generating Code...
+4>CursorImpl.cpp
+6>Compiling...
+6>SoundFileWriterWav.cpp
+6>Generating Code...
+4>ClipboardImpl.cpp
+6>   Creating library C:/Program Files/SFML-2.6.0/lib/Debug/sfml-audio-d.lib and object C:/Program Files/SFML-2.6.0/lib/Debug/sfml-audio-d.exp
+6>sfml-audio.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-audio-d-2.dll
+4>InputImpl.cpp
+4>Generating Code...
+4>Compiling...
+4>JoystickImpl.cpp
+4>SensorImpl.cpp
+4>VideoModeImpl.cpp
+4>VulkanImplWin32.cpp
+4>WindowImplWin32.cpp
+4>WglContext.cpp
+4>Generating Code...
+4>   Creating library C:/Program Files/SFML-2.6.0/lib/Debug/sfml-window-d.lib and object C:/Program Files/SFML-2.6.0/lib/Debug/sfml-window-d.exp
+4>sfml-window.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-window-d-2.dll
+7>------ Build started: Project: sfml-graphics, Configuration: Debug x64 ------
+7>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/src/SFML/Graphics/CMakeLists.txt
+7>BlendMode.cpp
+7>Color.cpp
+7>Font.cpp
+7>Glsl.cpp
+7>GLCheck.cpp
+7>GLExtensions.cpp
+7>Image.cpp
+7>ImageLoader.cpp
+7>RenderStates.cpp
+7>RenderTexture.cpp
+7>RenderTarget.cpp
+7>RenderWindow.cpp
+7>Shader.cpp
+7>Texture.cpp
+7>TextureSaver.cpp
+7>Transform.cpp
+7>Transformable.cpp
+7>View.cpp
+7>Vertex.cpp
+7>Shape.cpp
+7>Generating Code...
+7>Compiling...
+7>CircleShape.cpp
+7>RectangleShape.cpp
+7>ConvexShape.cpp
+7>Sprite.cpp
+7>Text.cpp
+7>VertexArray.cpp
+7>VertexBuffer.cpp
+7>RenderTextureImpl.cpp
+7>RenderTextureImplFBO.cpp
+7>RenderTextureImplDefault.cpp
+7>Generating Code...
+7>   Creating library C:/Program Files/SFML-2.6.0/lib/Debug/sfml-graphics-d.lib and object C:/Program Files/SFML-2.6.0/lib/Debug/sfml-graphics-d.exp
+7>sfml-graphics.vcxproj -> C:\Program Files\SFML-2.6.0\lib\Debug\sfml-graphics-d-2.dll
+8>------ Build started: Project: ALL_BUILD, Configuration: Debug x64 ------
+8>Building Custom Rule C:/Users/spadm/Documents/Programming/SFML-2.6.0-sources/CMakeLists.txt
+========== Build: 8 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 7:34 PM and took 24.761 seconds ==========
